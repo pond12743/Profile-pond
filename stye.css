@@ -1,0 +1,138 @@
+@import url(resset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Popins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right,#09ffca, #20d413);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card {
+    width: 450px;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.profile-card::before {
+    width: 450px;
+    background: rgba(255, 255, 255, .15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+
+.profile-card-img {
+    margin-bottom: 2rem;
+}
+
+.profile-card-img img {
+    width: 450px;
+}
+
+.profile-card-img,
+.profile-card-header,
+.profile-card-social {
+    text-align: center;
+}
+
+.profile-card a {
+    text-decoration: none;
+    color: #35339a;
+}
+
+.profile-card a:hover {
+    text-decoration: underline;
+}
+
+.profile-card-header{
+    margin-bottom: 2rem;
+}
+
+.profile-card-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.profile-card-header h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.profile-card-header h3,
+.icon {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 100px;
+}
+
+.profile-card-actions button {
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+    text-align: center;
+    margin-top: .5rem;
+}
+
+.profile-card-actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-card-action button:hover {
+    background-color: rgba(0, 0, 0, .85);
+    cursor: pointer;
+}
+
+.profile-card-social {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: .5rem;
+
+}
+
+.profile-card-social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.profile-card-social-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, );
+}
+
+
+
+/* Responsive */
+
+@media (max-with:768px) {
+
+    body {
+        padding: 2rem 0;
+    }
+
+    .profile-card {
+        width: 300px;
+        padding: 2rem;
+    }
+}
